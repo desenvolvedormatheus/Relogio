@@ -1,4 +1,4 @@
-var data = new Date
+var data = new Date()
 
 function zero_esquerda(n) {
     if (n < 10) {
@@ -34,9 +34,9 @@ function dia_semana() {
 function data_ano() {    
     const data_anual = document.querySelector('.data_ano')
     let dia = zero_esquerda(data.getDate())
-    let mes = zero_esquerda(data.getMonth())
+    let mes = zero_esquerda(data.getMonth()+1)
 
-    let dia_mes_ano = `${dia} - ${mes}`
+    let dia_mes_ano = `${dia} ${mes}`
 
     data_anual.innerHTML = dia_mes_ano
 }
