@@ -11,14 +11,23 @@ function dia_semana() {
     const dia_semana = document.querySelector('.dia_semana')
     let semana = data.getDay()
 
-    if (semana == 0){ semana = 'Dom' } 
-    else if (semana == 1){ semana = 'Seg' }
-    else if (semana == 2){ semana = 'Ter' }
-    else if (semana == 3){ semana = 'Qua' }
-    else if (semana == 4){ semana = 'Qui' }
-    else if (semana == 5){ semana = 'Sex' }
-    else if (semana == 6){ semana = 'Sab' }
-    
+    switch(semana){ 
+        case 0: semana = 'Dom'
+        break
+        case 1: semana = 'Seg'
+        break
+        case 2: semana = 'Ter'
+        break
+        case 3: semana = 'Qua'
+        break
+        case 4: semana = 'Qui'
+        break
+        case 5: semana = 'Sex'
+        break
+        case 6: semana = 'Sab'
+        default: semana = '[Erro] DIA NÂO ENCONTRADO'
+    }
+
     dia_semana.innerHTML = semana
 }
 
