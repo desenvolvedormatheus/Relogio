@@ -1,0 +1,12 @@
+.caixa_relogio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dia_semana, .data_ano {
+    font-size: 4.5rem;
+}
+.hora{
+    font-family: 'digital';
+    font-size: 14rem;
+}
